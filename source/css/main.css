@@ -1,0 +1,62 @@
+html,
+body {
+	height: 100%;
+	background: url('../images/background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.carousel {
+	height: 400px;
+}
+
+.item,
+.active,
+.carousel-inner {
+	height: 100%;
+}
+
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.navbar-header {
+	background-color: #966868;
+}
+
+.navbar-inverse {
+	background-color: #eddac9;
+	border-color: #966868;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fcfcfc;
+}
+
+.navbar-nav > li > a:hover {
+	border-color: #966868
+}
+
+.page-content {
+	background-color: #fcfcfc;
+	padding: 30px 30px 0 30px;
+}
+
+.title {
+	text-align: center;
+	font-weight: 100;
+	margin-top: 65px;
+}
+
+footer {
+	text-align: center;
+	margin: 50px 0;
+}
