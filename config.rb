@@ -12,8 +12,8 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
-set :css_dir, 'css'
-set :js_dir, 'js'
+set :css_dir, 'assets/css'
+set :js_dir, 'assets/js'
 
 activate :relative_assets
 set :relative_links, true

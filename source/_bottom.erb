@@ -1,7 +1,13 @@
-<%= javascript_include_tag 'jquery.js' %>
-<%= javascript_include_tag 'bootstrap.min.js' %>
-<script>
-$('.carousel').carousel({
-	interval: 5000 //changes the speed
-})
-</script>
+<%= javascript_include_tag 'jquery.min.js' %>
+<%= javascript_include_tag 'jquery.dropotron.min.js' %>
+<%= javascript_include_tag 'skel.min.js' %>
+<%= javascript_include_tag 'util.js' %>
+<!--[if lte IE 8]><<%= javascript_include_tag 'ie/respond.min.js' %><![endif]-->
+<%= javascript_include_tag 'main.js' %>
+
+<!--<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]
+<script src="assets/js/main.js"></script>-->

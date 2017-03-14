@@ -1,19 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= partial "head" %>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
 
-<head>
-	<%= partial "head" %>
-</head>
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
 
-<body>
-	<div class="page-content container">
-		<%= partial "nav" %>
-		<%= yield %>
-		<hr>
-		<%= partial "footer" %>
-	</div>
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">University of Birmingham Islamic Society</a></h1>
 
-	<%= partial "bottom" %>
-</body>
+						<!-- Nav -->
+							<%= partial "nav" %>
 
+					</div>
+
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<%= partial "header" %>
+						</section>
+
+				</div>
+
+				<!-- Content -->
+				<%= yield %>
+
+				<%= partial "footer" %>
+
+		</div>
+
+		<%= partial "bottom" %>
+
+	</body>
 </html>
