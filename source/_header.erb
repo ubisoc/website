@@ -1,11 +1,22 @@
+<% if current_page.data.title == "index" %>
+
 <header>
-  <h2>Telephasic is a responsive
+  <h2>University of Birmingham
   <br />
-  site template by <a href="http://html5up.net">HTML5 UP</a></h2>
+  Islamic Society</h2>
 </header>
-<p>Designed and built on <strong>skel</strong> by <a href="http://twitter.com/ajlkn">AJ</a>. Released for free under
+<p>Just a nice <strong>quote</strong> here by B<a href="http://twitter.com/ossedb">oss</a>. Released for free under
 <br />
 the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>.</p>
 <ul class="actions">
-  <li><a href="#" class="button">Get this party started</a></li>
+  <li><a href="#" class="button">Get started</a></li>
 </ul>
+
+<% elsif current_page.data.title == "who-we-are" %>
+
+<header>
+  <h2>Who we are</h2>
+</header>
+<p>Page subtitle</p>
+
+<% end %>
