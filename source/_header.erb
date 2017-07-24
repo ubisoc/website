@@ -1,14 +1,11 @@
 <% if current_page.data.title == "index" %>
 
 <header>
-  <h2>University of Birmingham
-  <br />
-  Islamic Society</h2>
+  <!--<h2>University of Birmingham
+  <br /> :width => '35', :class => 'logo'
+  Islamic Society</h2>-->
+  <%= image_tag 'images/logo.png', :width => '300' %>
 </header>
-<p>Just a nice <strong>quote</strong>.</p>
-<ul class="actions">
-  <li><%= link_to 'About us', '/who-we-are.html' %></li>
-</ul>
 
 <% elsif current_page.data.title == "who-we-are" %>
 
