@@ -11,3 +11,101 @@
 <script src="assets/js/util.js"></script>
 <[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]
 <script src="assets/js/main.js"></script>-->
+
+<% if current_page.data.title == "local-mosques" %>
+<script>
+  function initMap() {
+    var center = {lat: 52.451896, lng: -1.910822};
+    var chaplaincy = {lat: 52.449417, lng: -1.926418};
+    var jalalabad = {lat: 52.442649, lng: -1.934597};
+    var muslimStudentHouse = {lat: 52.457380, lng: -1.885944};
+
+    // =========================== Windows
+    var chaplaincyStr =
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">University of Birmingham Chaplaincy (St Francis Hall)</h1>'+
+      '<div id="bodyContent">'+
+      '<p>Not exactly a mosque but it is a multi-faith centre which religious societies at the University of Birmingham use.' +
+      'Located right behind the Guild of Students, it is the venue which the Islamic Society use to host Jumuah (Friday Prayers) every single Friday of the year.</p>'+
+      '</div>'+
+      '</div>';
+
+    var chaplaincyWindow = new google.maps.InfoWindow({
+      content: chaplaincyStr
+    });
+
+    var jalalabadStr =
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Jalalabad Mosque</h1>'+
+      '<div id="bodyContent">'+
+      '<p>A local mosque located in Selly Oak. The only mosque within a 30 minute walk of campus.' +
+      'Congregational prayer for every prayer is held in this mosque every single day of the year.' +
+      'They hold Friday and Eid Day Prayers.' +
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+    var jalalabadWindow = new google.maps.InfoWindow({
+      content: jalalabadStr
+    });
+
+    var muslimStudentHouseStr =
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Muslim Student House Mosque</h1>'+
+      '<div id="bodyContent">'+
+      '<p>The closest mosque after Jalalabad and is located in Moseley. 45 minute walk from campus. Quite a large mosque with regular events and activities.' +
+      'FOSIS (Federation of Student Islamic Societies), MAB Youth (Muslim Association of Britain) and the University of Birmingham Islamic Society all' +
+      'work in partnership with Muslim Student House and share facilities. Congregational prayer for every prayer is held in this mosque every single day of the year.' +
+      'They hold Friday and Eid Day Prayers.' +
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+    var muslimStudentHouseWindow = new google.maps.InfoWindow({
+      content: muslimStudentHouseStr
+    });
+
+    // =========================== Create map
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: center
+    });
+
+    // =========================== Chaplaincy
+    var chaplaincyMarker = new google.maps.Marker({
+      position: chaplaincy,
+      map: map
+    });
+    chaplaincyMarker.addListener('click', function() {
+      chaplaincyWindow.open(map, chaplaincyMarker);
+    });
+
+    // =========================== Jalalabad
+    var jalalabadMarker = new google.maps.Marker({
+      position: jalalabad,
+      map: map
+    });
+    jalalabadMarker.addListener('click', function() {
+      jalalabadWindow.open(map, jalalabadMarker);
+    });
+
+    // =========================== Muslim Student House
+    var muslimStudentHouseMarker = new google.maps.Marker({
+      position: muslimStudentHouse,
+      map: map
+    });
+    muslimStudentHouseMarker.addListener('click', function() {
+      muslimStudentHouseWindow.open(map, muslimStudentHouseMarker);
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-WxzbnwrSbcxcKWmR3gueYdGmdjXcvYI&callback=initMap">
+</script>
+<% end %>

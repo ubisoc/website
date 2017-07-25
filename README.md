@@ -13,3 +13,7 @@ You'll have to repeat the following steps every time you deploy an update. Consi
 1. Build your project. Starting at the project root: `bundle exec middleman build`
 2. Change into the build directory: `cd build/`
 3. git add/commit/push
+
+## Google Maps Embed API
+
+- Key: `AIzaSyD-WxzbnwrSbcxcKWmR3gueYdGmdjXcvYI`
