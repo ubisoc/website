@@ -54,18 +54,18 @@
     });
 
     var muslimStudentHouseStr =
-      '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Muslim Student House Mosque</h1>'+
-      '<div id="bodyContent">'+
-      '<p>The closest mosque after Jalalabad and is located in Moseley. 45 minute walk from campus. Quite a large mosque with regular events and activities.' +
-      'FOSIS (Federation of Student Islamic Societies), MAB Youth (Muslim Association of Britain) and the University of Birmingham Islamic Society all' +
-      'work in partnership with Muslim Student House and share facilities. Congregational prayer for every prayer is held in this mosque every single day of the year.' +
-      'They hold Friday and Eid Day Prayers.' +
-      '</p>'+
-      '</div>'+
-      '</div>';
+    '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h1 id="firstHeading" class="firstHeading">Muslim Student House Mosque</h1>'+
+    '<div id="bodyContent">'+
+    '<p>The closest mosque after Jalalabad and is located in Moseley. 45 minute walk from campus. Quite a large mosque with regular events and activities.' +
+    'FOSIS (Federation of Student Islamic Societies), MAB Youth (Muslim Association of Britain) and the University of Birmingham Islamic Society all' +
+    'work in partnership with Muslim Student House and share facilities. Congregational prayer for every prayer is held in this mosque every single day of the year.' +
+    'They hold Friday and Eid Day Prayers.' +
+    '</p>'+
+    '</div>'+
+    '</div>';
 
     var muslimStudentHouseWindow = new google.maps.InfoWindow({
       content: muslimStudentHouseStr
@@ -104,6 +104,218 @@
       muslimStudentHouseWindow.open(map, muslimStudentHouseMarker);
     });
   }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-WxzbnwrSbcxcKWmR3gueYdGmdjXcvYI&callback=initMap">
+</script>
+<% end %>
+
+<% if current_page.data.title == "halal-places-to-eat" %>
+<script>
+function initMap() {
+  // =========================== Create map
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {
+      lat: 52.445637,
+      lng: -1.933569
+    }
+  });
+
+  // =========================== Locations
+  var places = [];
+
+  // Pepe's
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.445070,
+        lng: -1.934376
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Pepe\'s</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="http://s3.amazonaws.com/ldc/large/2297/22979225.jpg">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Dixy Chicken
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.446270,
+        lng: -1.932501
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Dixy Chicken</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://i.ebayimg.com/00/s/NTc1WDEwMjQ=/z/4zEAAOSwal5YLGZs/$_86.JPG">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Chicken.com
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.445637,
+        lng: -1.933569
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Chicken.com</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://i.ebayimg.com/00/s/NTc1WDEwMjQ=/z/4zEAAOSwal5YLGZs/$_86.JPG">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Pizza Land
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.445108,
+        lng: -1.934392
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Pizza Land</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://s3-media1.fl.yelpcdn.com/bphoto/rBHSsHUx2VNQ62Tm9AZOgQ/348s.jpg">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Luciano's
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.444700,
+        lng: -1.934926
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Luciano\'s</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://b.zmtcdn.com/data/pictures/0/6900030/a012c443a9d7ed4b05233789d0804db4.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Turkish Kitchen
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.446541,
+        lng: -1.931615
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Turkish Kitchen</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/c7/82/a5/turkish-kitchen.jpg">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Yakinori
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.446151,
+        lng: -1.932060
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Yakinori</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="https://thehungrypair.files.wordpress.com/2015/06/image1-91.jpeg?w=748&h=561">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  // Wanted Burgers
+  places.push({
+    marker: new google.maps.Marker({
+      position: {
+        lat: 52.444356,
+        lng: -1.935553
+      },
+      map: map
+    }),
+
+    window: new google.maps.InfoWindow({
+      content:
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Wanted Burgers</h1>'+
+      '<div id="bodyContent">'+
+      '<img src="http://wantedburgers.com/media/logo.png">' +
+      '</div>'+
+      '</div>'
+    })
+  });
+
+  places.forEach(function (place) {
+    place.marker.addListener('click', function() {
+      place.window.open(map, place.marker);
+    });
+  });
+}
+
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-WxzbnwrSbcxcKWmR3gueYdGmdjXcvYI&callback=initMap">
