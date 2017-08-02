@@ -1,6 +1,8 @@
 ---
 type: "no-sidebar"
 title: "postgraduates"
+additional_css: ["https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", "http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"]
+additional_js: ["https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"]
 ---
 
 <div class="wrapper">
@@ -50,6 +52,14 @@ title: "postgraduates"
 				<p class="cite">
 					Umer Karim (Pakistan) on the PG Dinner, PhD in Political Science
 				</p>
+
+				<div class="grid">
+					<% for i in 1..10 %>
+					<div class="grid-item">
+						<%= tag :img, :src => "/images/postgrad/dinner-16-17/p#{i}.jpg" %>
+					</div>
+					<% end %>
+				</div>
 			</div>
 
 			<div class="block">
