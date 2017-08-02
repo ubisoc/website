@@ -1,6 +1,8 @@
 ---
 type: "no-sidebar"
 title: "charity-week"
+additional_css: ["http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", "http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"]
+additional_js: ["http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"]
 ---
 
 <div class="wrapper">
@@ -57,6 +59,14 @@ title: "charity-week"
 
       <div class="block">
         <h3>Previous Charity Weeks gallery</h3>
+
+				<div class="grid">
+					<% for i in 1..14 %>
+					<div class="grid-item">
+						<%= tag :img, :src => "/images/cw-16-17/p#{i}.jpg" %>
+					</div>
+					<% end %>
+				</div>
       </div>
 		</article>
 	</div>

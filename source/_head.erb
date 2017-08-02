@@ -16,3 +16,9 @@
 <!--[if lte IE 8]><%= stylesheet_link_tag 'ie8.css' %><![endif]-->
 <!--[if lte IE 9]><%= stylesheet_link_tag 'ie9.css' %><![endif]-->
 <%= stylesheet_link_tag 'custom.css' %>
+
+<% if current_page.data.additional_css %>
+  <% current_page.data.additional_css do |css| %>
+    <%= stylesheet_link_tag css %>
+  <% end %>
+<% end %>

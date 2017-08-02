@@ -3,14 +3,12 @@
 <%= javascript_include_tag 'skel.min.js' %>
 <%= javascript_include_tag 'util.js' %>
 <!--[if lte IE 8]><<%= javascript_include_tag 'ie/respond.min.js' %><![endif]-->
+<% if current_page.data.additional_js %>
+  <% current_page.data.additional_js do |js| %>
+    <%= javascript_include_tag js %>
+  <% end %>
+<% end %>
 <%= javascript_include_tag 'main.js' %>
-
-<!--<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]
-<script src="assets/js/main.js"></script>-->
 
 <% if current_page.data.title == "local-mosques" %>
 <script>

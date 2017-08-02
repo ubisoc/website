@@ -1,6 +1,8 @@
 ---
 type: "no-sidebar"
 title: "discover-islam-week"
+additional_css: ["http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", "http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"]
+additional_js: ["http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"]
 ---
 
 <div class="wrapper">
@@ -26,9 +28,13 @@ title: "discover-islam-week"
         It’s a fantastic experience and we’d heavily recommend that you take part. It’s an experience you’ll never forget (as you might have seen in the video above!).
       </p>
 
-      <p>
-        [GALLERY]
-      </p>
+			<div class="grid">
+				<% for i in 1..27 %>
+				<div class="grid-item">
+					<%= tag :img, :src => "/images/diw-16-17/p#{i}.jpg" %>
+				</div>
+				<% end %>
+			</div>
 		</article>
 	</div>
 </div>
