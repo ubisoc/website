@@ -1,40 +1,119 @@
 ---
 type: "no-sidebar"
 title: "discover-islam-week"
-additional_css: ["https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", "https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"]
-additional_js: ["https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"]
+additional_css: ["photoswipe/photoswipe.css", "photoswipe/default-skin/default-skin.css"]
+additional_js: ["photoswipe/photoswipe.min.js", "photoswipe/photoswipe-ui-default.min.js"]
 ---
 
 <div class="wrapper">
-	<div class="container" id="main">
-		<article id="content">
-			<header>
-				<h2>Discover Islam Week</h2>
-				<p>
-          Discover Islam Week is an annual campaign run by many Islamic Societies across the country to spread the message of Islam to everyone on campus over the course of a week.
-				</p>
-			</header>
+    <div class="container" id="main">
+        <article id="content">
+            <header>
+                <h2>Discover Islam Week</h2>
+                <p>
+                    Discover Islam Week is an annual campaign run by many Islamic Societies across the country to spread the message of Islam to everyone on campus over the course of a week.
+                </p>
+            </header>
 
-      <iframe class="yt-video" src="https://www.youtube.com/embed/P8ps605b0Es">
-      </iframe>
+            <iframe class="yt-video" src="https://www.youtube.com/embed/P8ps605b0Es">
+            </iframe>
 
-      <p>
-        The University of Birmingham Islamic Society hire a marquee in the centre of campus (next to Old Joe) and hold Islamic talks every day, host educational stalls about Islam and serve free food.
-        Mentioned by many Islamic Society members to be the best week in the year because of the amazing unity and team work Islamic Society members take part in to make the week a success.
-      </p>
+            <p>
+                The University of Birmingham Islamic Society hire a marquee in the centre of campus (next to Old Joe) and hold Islamic talks every day, host educational stalls about Islam and serve free food. Mentioned by many Islamic Society members to be the best week
+                in the year because of the amazing unity and team work Islamic Society members take part in to make the week a success.
+            </p>
 
-      <p>
-        The Islamic Society organise this in a similar way to Charity Week where we have teams for specific parts of Discover Islam Week such as Outreach, and we hold Planning Meetings a few weeks before Discover Islam Week for anyone to volunteer and join a team.
-        It’s a fantastic experience and we’d heavily recommend that you take part. It’s an experience you’ll never forget (as you might have seen in the video above!).
-      </p>
+            <p>
+                The Islamic Society organise this in a similar way to Charity Week where we have teams for specific parts of Discover Islam Week such as Outreach, and we hold Planning Meetings a few weeks before Discover Islam Week for anyone to volunteer and join a
+                team. It’s a fantastic experience and we’d heavily recommend that you take part. It’s an experience you’ll never forget (as you might have seen in the video above!).
+            </p>
 
-			<div class="grid">
-				<% for i in 1..27 %>
-				<div class="grid-item">
-					<%= tag :img, :src => "/images/diw-16-17/p#{i}.jpg" %>
-				</div>
-				<% end %>
-			</div>
-		</article>
-	</div>
+			<div class="gallery-preview">
+                <%= tag :img, :src => "/images/diw-16-17/p11.jpg" %>
+                <div class="gp-content">
+                    <h1><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</h1>
+                    <p>
+						A week packed with events, stalls, activities
+						which aim is to raise awareness about Islam and
+						create an atmosphere of dialogue and coexistence.
+					</p>
+                </div>
+                <div class="gp-overlay">
+                    <div class="gp-button">
+                        <i class="fa fa-search" data-gallery="gallery" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<div id="gallery">
+	<% for i in 1..27 %>
+		<%= tag :img, :src => "/images/diw-16-17/p#{i}.jpg", :"data-size" => "2048x1365" %>
+	<% end %>
+</div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
 </div>
