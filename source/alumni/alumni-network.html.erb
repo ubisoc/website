@@ -1,0 +1,192 @@
+---
+type: "no-sidebar"
+title: "alumni-network"
+htitle: "Alumni Network"
+description: "Connecting the Islamic Society Alumni to the current Muslim students to inspire excellence in this world and the hereafter."
+additional_css: ["photoswipe/photoswipe.css", "photoswipe/default-skin/default-skin.css"]
+additional_js: ["photoswipe/photoswipe.min.js", "photoswipe/photoswipe-ui-default.min.js"]
+---
+
+<div class="wrapper">
+    <div class="container" id="main">
+        <article id="content">
+
+            <%= tag :img, :src => "/images/alumni/alumni-network-logo.jpg", :class => "image" %>
+
+            <header>
+                <h2>The University of Birmingham Islamic Society Alumni Network</h2>
+                <p>
+                    <i>"Connecting the Islamic Society Alumni to the current Muslim students to inspire excellence in this world and the hereafter."</i>
+                </p>
+            </header>
+
+            <iframe class="yt-video" src="https://www.youtube.com/embed/mlAgoGt1QaI" allowfullscreen></iframe>
+
+            <!-- <table cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <th><%= tag :img, :src => "/images/alumni/reunion.jpg", :class => "image" %></th>
+                <th><%= tag :img, :src => "/images/alumni/networking.jpg", :class => "image" %></th>
+                <th><%= tag :img, :src => "/images/alumni/community.jpg", :class => "image" %></th>
+               </tr>
+               <tr>
+                <td>Reuniting</td>
+                <td>Networking</td>
+                <td>Community</td>
+              </tr>
+               <tr>
+                <td>Reuniting UoB Muslim Graduates</td>
+                <td>Cultivating connections across professional spheres</td>
+                <td>Empowering Muslim communities in Birmingham and beyond</td>
+              </tr>
+            </table> -->
+
+            <h2>What is the UBISOC Alumni Network?</h2>
+            <p>
+                The University of Birmingham Islamic Society Network is a group of Muslim graduates from the University of Birmingham who have gone on to assume influential roles in the community as professionals in their field. The group are united by their desire to ensure the long term growth of the Muslim community in Birmingham and the UK.
+            </p>
+
+            <h2>What potential does the network have?</h2>
+            <p>
+                Looking back at the history of UBISOC, so many people have passed through and gone on to reach heights of excellence, yet many of them never kept in contact with their peers from their University days. By bringing this lineage of professionals and leaders back together, there is huge potential for collaboration across Muslim civil society to more efficiently facilitate the growth and refinement of Muslim Community infrastructure in the UK.<br><br>
+
+                An Alumni Network has the potential to become a waqf (Islamic trust) which builds wealth via a variety of projects over many years, and young Muslim talent can be fast tracked, nurtured and guided by elders from amongst the Alumni to enter positions in the community where they can be of maximum benefit to the Muslim community and wider society. The zeal and energy of youth can be focused by the wisdom of elders towards causes that are truly beneficial.
+            </p>
+
+            <p>
+                If you're interested in joining the University of Birmingham Islamic Society Alumni Network, head over to our membership page which will detail exactly what benefits you'll get as well as how to sign up. The link is below:<br><br>
+
+
+                <b><p><%= link_to 'Alumni Network Membership', '/alumni/alumni-membership.html' %></p></b><br>
+            </p>
+
+            <%= tag :img, :src => "/images/alumni/alumni-dinner-general-pic.jpg", :class => "image" %><br>
+
+            <h2><b>Potential Projects</b></h2><br>
+
+            <h2>Muslim Chaplain</h2>
+            <p>
+                
+                The University of Birmingham currently does not have a full time paid Muslim Chaplain. This has resulted in a significant shortfall in the support Muslim students receive at the University. With over 4000 Muslim students, the University of Birmingham is one institution which could hugely benefit from such a person. Unfortunately, the University do not provide funding for the salary of any faith Chaplain. Therefore, a potential project of the Alumni Network is to be able to raise the money to fund a Muslim Chaplain selected by the Islamic Society and the Alumni Network. This would have a tremendous effect on the students at the University and would provide a stable, reliable and trusted individual for both the Islamic Society and the University to interact with and represent the Muslim students on campus.
+
+            </p>
+
+            <h2>Alumni Network Membership</h2>
+            <p>
+
+                A membership scheme where registered members of the Alumni Network receive exclusive invitations to reunion events, exclusive Alumni merchandise and regular newsletters updating them on the progress of the Islamic Society. A way to give back to the Islamic Society which facilitated a huge part of their student life and growth as well as keeping in touch with how the Islamic Society is functioning.
+
+            </p>
+
+            <h2>Mentoring</h2>
+            <p>
+
+                One potential initiative could be to provide a way for current students and graduates and established professionals in particular fields to meet each other. Furthermore, the established professionals could offer personalised help and advice to students and graduates about how to best go about building their careers bearing in mind the challenges they will face as Muslims.
+
+            </p>
+
+            <h2>Scholarships</h2>
+            <p>
+                Scholarships is one way which the financial ability of the Alumni Network can be harnessed to really help those in need. With the funds which the Alumni can provide, the Alumni Network can set up scholarships for both Muslim students in financial difficulty as well as students who are excelling in their studies. Through these scholarships, we can give students like these the ability to study at an excellent university and inspire these students to become leaders of their Muslim communities.
+            </p>
+
+            <h2>University of Birmingham Islamic Society Alumni Housing Association</h2>
+            <p>
+
+                The idea of creating a Housing Association is probably the longest term project in this list. This project is deeply rooted in the idea that the creation of the UBISOC Alumni Network is an opportunity to create a waqf (Islamic trust) which creates wealth and is an establishment which the Muslim community can rely on for years to come. To create that waqf, we need to invest the money we raise into areas which will help both generate more wealth and actually benefit the Muslim community as well. By creating a Housing Association, where the Alumni Network owns actual properties in the areas surrounding the University, we can both provide Muslim students with safe, comfortable and stress free housing while also building the wealth of the organisation. 
+            </p>
+
+            <div class="block">
+                <h3>If you have any questions about the Alumni Network please email</h3>
+                <ul>
+                    <li>Aaquib Naved (<a href="mailto:headbrother@ubisoc.co.uk">headbrother@ubisoc.co.uk</a>)</li>
+                    <li>Munibah Saleem (<a href="alumni@ubsico.co.uk">alumni@ubisoc.co.uk</a>)</li>
+                </ul>
+            </div>
+
+            <%= tag :img, :src => "/images/alumni/alumni-dinner-group-pic.jpg", :class => "image" %><br>
+
+        </article>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery">
+	<% for i in 1..7 %>
+		<%= tag :img, :src => "/images/fw-16-17/p#{i}.jpg", :"data-size" => "2048x1365" %>
+	<% end %>
+</div>
+
+<style>
+img{
+ border:0;
+ vertical-align:top;
+}
+table {border: none;}
+td {border: none;}
+tr {border: none;}
+table { border-collapse:collapse }
+</style>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,120 @@
+---
+type: "no-sidebar"
+title: "alumni-membership"
+htitle: "Alumni Membership"
+description: "Signing up to the Alumni Network"
+additional_css: ["photoswipe/photoswipe.css", "photoswipe/default-skin/default-skin.css"]
+additional_js: ["photoswipe/photoswipe.min.js", "photoswipe/photoswipe-ui-default.min.js"]
+---
+
+<div class="wrapper">
+    <div class="container" id="main">
+        <article id="content">
+
+            <header>
+                <h2>Inaugural Alumni Dinner 2018</h2>
+                <p>
+                    <i>Our first ever Alumni Dinner took place on Saturday 27th January 2018. Alhamdulillah an incredible event with around 100 attendees. InshaAllah the start of a great journey.</i>
+                </p>
+            </header>
+
+            <iframe class="yt-video" src="https://www.youtube.com/embed/6yjF2GB-rjI" allowfullscreen></iframe>
+
+            <div class="block">
+                <p>
+                    If you'd like to see more media about the dinner, please head over to our Facebook Picture Album or our Facebook event page. The links are below.<br>
+
+                    <a href="https://www.facebook.com/pg/ubisocalumninetwork/photos/?tab=album&album_id=1919037844792438">Facebook Picture Album</a><br>
+
+                    <a href="https://www.facebook.com/events/174345296484883/">Facebook Event Page</a><br>
+
+                    We are hoping to do events such as the Alumni Dinner in the future so keep a lookout for what is coming up!
+                </p>
+            </div>
+
+            <%= tag :img, :src => "/images/alumni/alumni-dinner-page1.jpg", :class => "image" %><br>
+
+            <%= tag :img, :src => "/images/alumni/alumni-dinner-page2.jpg", :class => "image" %><br>
+
+            <div class="block">
+                <h3>If you have any questions about the Alumni Dinner or Alumni Network please email</h3>
+                <ul>
+                    <li>Aaquib Naved (<a href="mailto:headbrother@ubisoc.co.uk">headbrother@ubisoc.co.uk</a>)</li>
+                    <li>Munibah Saleem (<a href="alumni@ubsico.co.uk">alumni@ubisoc.co.uk</a>)</li>
+                </ul>
+            </div>
+
+        </article>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery">
+	<% for i in 1..7 %>
+		<%= tag :img, :src => "/images/fw-16-17/p#{i}.jpg", :"data-size" => "2048x1365" %>
+	<% end %>
+</div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>

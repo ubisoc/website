@@ -1,8 +1,8 @@
 ---
 type: "no-sidebar"
-title: "alumni-dinner"
-htitle: "Inaugral Alumni Dinner 2018"
-description: "Our first ever Alumni Dinner!"
+title: "alumni-membership"
+htitle: "Alumni Membership"
+description: "Signing up to the Alumni Network"
 additional_css: ["photoswipe/photoswipe.css", "photoswipe/default-skin/default-skin.css"]
 additional_js: ["photoswipe/photoswipe.min.js", "photoswipe/photoswipe-ui-default.min.js"]
 ---
@@ -10,25 +10,44 @@ additional_js: ["photoswipe/photoswipe.min.js", "photoswipe/photoswipe-ui-defaul
 <div class="wrapper">
     <div class="container" id="main">
         <article id="content">
-<!-- 
-        <%= tag :img, :src => "/images/alumni/alumni-banner.jpg", :"data-size" => "1024x650" %> -->
-        
-        <style>
-            #banner {
-                height: 100%;
-                width: 100%;
-            }
-        </style>
-        <br>
 
-            <!-- <%= tag :img, :src => "/images/alumni/alumni-dinner-poster.jpg", :class => "image" %> -->
+            <header>
+                <h2>Our History</h2>
+                <p>
+                    <i>The University of Birmingham Islamic Society was founded in the mid 1950s. This organisation is not something to be trifled with. The Islamic Society has served the Muslim students at the University of Birmingham for over 60 years! An incredible legacy....</i>
+                </p>
+            </header>
+            <div class="block">
+                <p>
+                    With the launch of our Alumni Network in January 2018, the Islamic Society is looking to record it's extensive history so that we can learn from the past.<br><br>
 
-            <!-- Ticket Tailor Widget. Paste this in to your website where you want the widget to appear. Do no change the code or the widget may not work properly. -->
-            <div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/new-order/131323/d22f/ref/website_widget/" target="_blank">Click here to buy tickets</a><br /><small><a href="http://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://dc161a0a89fedd6639c9-03787a0970cd749432e2a6d3b34c55df.ssl.cf3.rackcdn.com/tt-widget.js" data-url="https://www.tickettailor.com/new-order/131323/d22f/ref/website_widget/" data-type="inline" data-inline-minimal="false" data-inline-show-logo="true" data-inline-bg-fill="true"></script></div>
-            <!-- End of Ticket Tailor Widget -->   
+                    Currently we've worked on reconnecting with Alumni from the past decades which has been quite successful and has enabled us to produce timelines for both the Head Brothers and Head Sisters.<br> <br>
+
+                    We hope to continue this work to produce a detailed history of the Islamic Society, both graphically and textually. This page will be updated in more detail as that happens. If you have any knowledge you'd like to share with us, we would love for you to get in touch. Just check out the contact details below. <br> <br>
+                </p>
+            </div>
+
+            <%= tag :img, :src => "/images/alumni/headbrother-timeline.jpg", :class => "image" %><br>
+
+            <%= tag :img, :src => "/images/alumni/headsister-timeline.jpg", :class => "image" %><br>
+
+            <div class="block">
+                <h3>If you could help us trace back more of the history of the Islamic Society, please contact us using the emails below:</h3>
+                <ul>
+                    <li>Aaquib Naved (<a href="mailto:headbrother@ubisoc.co.uk">headbrother@ubisoc.co.uk</a>)</li>
+                    <li>Munibah Saleem (<a href="alumni@ubsico.co.uk">alumni@ubisoc.co.uk</a>)</li>
+                </ul>
+            </div>
 
         </article>
     </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery">
+	<% for i in 1..7 %>
+		<%= tag :img, :src => "/images/fw-16-17/p#{i}.jpg", :"data-size" => "2048x1365" %>
+	<% end %>
 </div>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
